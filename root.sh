@@ -37,7 +37,7 @@ case $install_ubuntu in
     else
       echo "Local file not found. Downloading ${ARCH_ALT}.tar.gz..."
       wget --tries=$max_retries --timeout=$timeout --no-hsts -O "$ROOTFS_TAR" \
-        "https://github.com/katy-the-kat/freeroot/raw/refs/heads/main/${ARCH_ALT}.tar.gz"
+        "https://github.com/poweredger710/freeroot/raw/refs/heads/main/${ARCH_ALT}.tar.gz"
 
       if [ $? -ne 0 ] || [ ! -s "$ROOTFS_TAR" ]; then
         echo "Download failed or file is empty. Exiting."
@@ -87,7 +87,7 @@ display_gg() {
 [__  |__| |___ |    |       [__   |  |__| |__/  |  |___ |  \ 
 ___] |  | |___ |___ |___    ___]  |  |  | |  \  |  |___ |__/ 
                                                              "
-  echo -e "Do whatever you want! Make sure to join discord.gg/kvm!"
+  echo -e "Do whatever you want! Make sure to see https://e5compute.host"
 }
 
 display_gg
