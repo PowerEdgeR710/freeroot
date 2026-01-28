@@ -70,7 +70,7 @@ case $INSTALL_FLAVOR in
 esac
 
 ROOTFS_TAR=""
-for c in "./${ROOTFS_ARCH}.tar.gz" "./${FLAV_PREFIX}${ROOTFS_ARCH}.tar.gz" "./${PROOT_ARCH}.tar.gz" "./${FLAV_PREFIX}${PROOT_ARCH}.tar.gz"; do
+for c in "./${FLAV_PREFIX}${ROOTFS_ARCH}.tar.gz" "./${FLAV_PREFIX}${PROOT_ARCH}.tar.gz" "./${ROOTFS_ARCH}.tar.gz" "./${PROOT_ARCH}.tar.gz"; do
     if [ -f "$c" ]; then
         ROOTFS_TAR="$(pwd)/$(basename "$c")"
         break
