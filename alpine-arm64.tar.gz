@@ -1,0 +1,5 @@
+--2026-01-28 07:20:31--  https://dl-cdn.alpinelinux.org/alpine/v3.23/releases/x86_64/alpine-minirootfs-3.23.3-aarch64.tar.gz
+Resolving dl-cdn.alpinelinux.org (dl-cdn.alpinelinux.org)... 10.0.0.5, 2a11:6c7:1201:4300:be24:11ff:fe2d:50a4
+Connecting to dl-cdn.alpinelinux.org (dl-cdn.alpinelinux.org)|10.0.0.5|:443... connected.
+OpenSSL: error:0A000438:SSL routines::tlsv1 alert internal error
+Unable to establish SSL connection.
