@@ -120,8 +120,8 @@ if [ ! -e "$ROOTFS_DIR/.installed" ]; then
     echo -e "nameserver 1.1.1.1\nnameserver 1.0.0.1" > "$ROOTFS_DIR/etc/resolv.conf"
     if [ "$INSTALL_FLAVOR" = "ubuntu" ]; then
         echo "deb http://archive.ubuntu.com/ubuntu jammy main restricted universe multiverse" > $ROOTFS_DIR/etc/apt/sources.list
-        echo "deb http://archive.ubuntu.com/ubuntu jammy-updates main restricted universe multiverse" >> $ROOTFS_DIR/etc/apt/sources.list"
-        echo "deb http://archive.ubuntu.com/ubuntu jammy-security main restricted universe multiverse" >> "$ROOTFS_DIR/etc/apt/sources.list"
+        echo "deb http://archive.ubuntu.com/ubuntu jammy-updates main restricted universe multiverse" >> $ROOTFS_DIR/etc/apt/sources.list
+        echo "deb http://archive.ubuntu.com/ubuntu jammy-security main restricted universe multiverse" >> "$ROOTFS_DIR/etc/apt/sources.list
     fi
     touch "$ROOTFS_DIR/.installed"
 fi
