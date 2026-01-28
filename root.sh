@@ -119,10 +119,10 @@ chmod +x "$PROOT_BIN"
 if [ ! -e "$ROOTFS_DIR/.installed" ]; then
     echo -e "nameserver 1.1.1.1\nnameserver 1.0.0.1" > "$ROOTFS_DIR/etc/resolv.conf"
     if [ "$INSTALL_FLAVOR" = "ubuntu" ]; then
-        echo "deb [trusted=yes] http://archive.ubuntu.com/ubuntu jammy main restricted universe multiverse" > $ROOTFS_DIR/etc/apt/sources.list
-        echo "deb [trusted=yes] http://archive.ubuntu.com/ubuntu jammy-updates main restricted universe multiverse" >> $ROOTFS_DIR/etc/apt/sources.list
-        echo "deb [trusted=yes] http://archive.ubuntu.com/ubuntu jammy-security main restricted universe multiverse" >> $ROOTFS_DIR/etc/apt/sources.list
-    fi
+       echo "deb [trusted=yes] http://ports.ubuntu.com/ubuntu-ports jammy main restricted universe multiverse" > $ROOTFS_DIR/etc/apt/sources.list
+       echo "deb [trusted=yes] http://ports.ubuntu.com/ubuntu-ports jammy-updates main restricted universe multiverse" >> $ROOTFS_DIR/etc/apt/sources.list
+       echo "deb [trusted=yes] http://ports.ubuntu.com/ubuntu-ports jammy-security main restricted universe multiverse" >> $ROOTFS_DIR/etc/apt/sources.list
+fi
     touch "$ROOTFS_DIR/.installed"
 fi
 
